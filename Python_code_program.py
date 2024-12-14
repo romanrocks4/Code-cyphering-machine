@@ -63,7 +63,7 @@ while program:
 
      elif menuinput == 3:
                 print("Goodbye!")
-                program = False
+                start = True
      else:
                 print ("sorry error")
 
@@ -79,7 +79,7 @@ while program:
             print("What would you like to do.")
             print("1. encrypt a message")
             print("2. decrypt a message")
-            print("3. end program")
+            print("3. logout")
             menuinput = int(input(":"))
 
             if menuinput == 1:
@@ -93,11 +93,12 @@ while program:
 
             elif menuinput == 3:
                 print("Goodbye!")
-                program = False
+                start = True
             else:
                 print ("sorry error")
                 
         else:
             print("Sorry but the password is incorrect. Try again bro...")
+            fire = True
 
 program = False
